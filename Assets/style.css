@@ -1,0 +1,59 @@
+
+
+:root {
+--headergray: #5f5f5f;
+--headerBGteal: rgb(138, 210, 219);
+}
+
+/* ################################## Nav Bar ######################################### */
+
+nav {
+    display: flex;
+    /* justify-content: flex-end; */
+    background-color: var(--headergray);
+}
+
+.name {
+    justify-content: flex-start;
+    color:  #5f5f5f;
+    background-color: var(--headerBGteal);
+}
+
+.links {
+    margin-left: auto;
+    color: var(--headerBGteal);
+}
+
+ul {
+    margin-left: auto;
+    display: flex;
+    list-style-type: none;
+}
+
+/* ################################## Background Pic with Subtitle #################### */
+
+.subtitle {
+    background-color: rgb(91, 116, 71);
+}
+/* .bgimage {
+    background-image: ;
+} */
+
+/* ################################## About Me ########################################  */
+
+.AboutMe {
+    background-color: burlywood;
+}
+
+/* ################################## Work ############################################*/
+
+.Work {
+    background-color: rgb(218, 150, 102);
+}
+
+
+/* ################################## Contact Me #######################################  */
+
+.ContactMe {
+    background-color: rgb(129, 99, 88);
+}
