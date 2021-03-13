@@ -15,20 +15,21 @@ nav {
 }
 
 .name {
+    display: flex;
+    flex-direction: column;
     justify-content: flex-start;
-    color:  #5f5f5f;
+    color:  var(--headergray);
     background-color: var(--headerBGteal);
     min-width: 350px;
-    margin-top: 12px;
+    margin: 12px 12px 12px 0px;
     height: 50px;
-    text-align: right;
 }
 
 .name h1 {
-    align-items: center;
     font-size: 30px;
-    margin: 8px;
+    margin-left: auto;
     padding-right: 5%;
+    padding-top: 2.5%;
 }
 
 .links {
