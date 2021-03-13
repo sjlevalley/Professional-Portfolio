@@ -37,7 +37,7 @@ nav {
     margin-left: auto;
     text-decoration: underline;
     color: var(--headerBGteal);
-    weight: bolder;
+    font-weight: bolder;
     margin-top: 5px;
     
 }
@@ -50,8 +50,8 @@ ul {
 }
 
 ul li {
-    margin: 10px;
-    padding: 0px;
+    margin: auto;
+    padding: 10px;
 }
 
 /* ################################## Background Pic with Subtitle #################### */
