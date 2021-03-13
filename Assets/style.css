@@ -65,7 +65,20 @@ body {
 /* ################################## Background Pic with Subtitle #################### */
 
 .subtitle {
-    background-color: rgb(91, 116, 71);
+    display: flex;
+    height: 130px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("./images/DG.jpg");
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.subtitle h2 {
+    font-size: 32px;
+    background-color: dimgrey;
+    margin: 35px 100px;
+    padding: 8px;
 }
 /* .bgimage {
     background-image: ;
@@ -143,6 +156,10 @@ body {
     }
   }
 
+  .subtitle h2 {
+      margin: 10px 40px;
+  }
+
 
   /* ###################### When Screen Changes to Mobile Size ############################## */
   /* ###################### When Screen Changes to Mobile Size ############################## */
@@ -169,6 +186,14 @@ body {
        flex: 1 0 33%;
    }
 
+   .subtitle {
+    justify-content: center;
+   }
+
+   .subtitle h2 {
+       text-align: center;
+       flex-wrap: wrap;
+   }
 
 
   }
