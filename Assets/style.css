@@ -87,8 +87,43 @@ body {
 /* ################################## About Me ########################################  */
 
 .AboutMe {
+    display: flex;
+    flex-direction: row;
     background-color: burlywood;
+    height: 100px;
 }
+
+.AMSidebar {
+    display: flex;
+    justify-content: flex-end;
+    flex: 25%;
+    border-right: 4px solid black; 
+    font-size: 32px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 5px 10px;
+    flex-wrap: wrap;
+
+}
+
+.AMSidebar h3 {
+    max-width: 100px;
+    justify-content: flex-end;
+    text-align: end;
+    flex-wrap: wrap;
+}
+
+.AboutMeText {
+    display: flex;
+    flex-direction: column;
+    flex: 75%;
+    justify-content: flex-start;
+    padding: 10px 15px
+}
+
+.AboutMeText p {
+    
+}
+
 
 /* ################################## Work ############################################*/
 
@@ -159,6 +194,54 @@ body {
   .subtitle h2 {
       margin: 10px 40px;
   }
+
+  /* ################################## About Me ########################################  */
+
+  .AboutMe {
+      flex-direction: column;
+      height: 250px;
+  }
+
+  .AMSidebar {
+      justify-content:flex-start;
+      border-right: none;
+      border-bottom: 4px solid black;
+      margin-left: 40px;
+      margin-right: 40px;
+  }
+
+  .AMSidebar h3 {
+      max-width: 100%;;
+      margin-right: auto;
+      margin-top: auto;
+      margin-left: -10px;
+      padding-bottom: 5px;
+      
+  }
+
+  .AboutMeText {
+      flex: 50%;
+      margin: 20px
+  }
+
+  /* .AMSidebar {
+    display: flex;
+    justify-content: flex-end;
+    flex: 25%;
+    border-right: 4px solid black; 
+    font-size: 32px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 5px 10px;
+    flex-wrap: wrap;
+
+}
+
+.AMSidebar h3 {
+    max-width: 100px;
+    justify-content: flex-end;
+    text-align: end;
+    flex-wrap: wrap;
+} */
 
 
   /* ###################### When Screen Changes to Mobile Size ############################## */
