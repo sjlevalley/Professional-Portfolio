@@ -6,12 +6,14 @@ body {
     display: flex;
     flex-direction: column;
     height: auto;
-    background-color:rgb(158, 161, 161);
+    background-color: var(--bodyBG);
 }
 
 :root {
 --headergray: #3f3b3b;
 --headerBGteal: rgb(122, 185, 194);
+--bodyBG: rgb(217, 219, 219);
+--bodytext: rgb(55, 73, 88);
 }
 
 /* ################################## Nav Bar ######################################### */
@@ -46,7 +48,6 @@ body {
     flex: 50%;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin-left: auto;
-    text-decoration: underline;
     color: var(--headerBGteal);
     font-weight: bolder;  
 }
@@ -63,6 +64,13 @@ body {
 .navlist li {
     margin: auto;
     padding: 10px;
+    
+}
+
+.navlist li a {
+    text-decoration: none;
+    padding-bottom: 3px;
+    border-bottom: 3px solid var(--headerBGteal);
 }
 
 /* ################################## Background Pic with Subtitle #################### */
@@ -79,7 +87,8 @@ body {
 
 .subtitle h2 {
     font-size: 32px;
-    background-color: dimgrey;
+    color: var(--headergray);
+    background-color: var(--headerBGteal);
     margin: 35px 100px;
     padding: 8px;
 }
@@ -90,20 +99,22 @@ body {
 /* ################################## About Me ########################################  */
 
 .AboutMe {
+    padding-top: 20px;
     display: flex;
-    
-    background-color: burlywood;
+    color: var(--bodytext);
+    background-color: var(--bodyBG);
     height: 25vh;
+    margin-bottom: 25px;
 }
 
 .AMSidebar {
     display: flex;
     justify-content: flex-end;
     flex: 25%;
-    border-right: 4px solid black; 
+    border-right: 3px solid var(--bodytext); 
     font-size: 32px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    padding: 5px 10px;
+    padding: 5px 10px; 
     flex-wrap: wrap;
 
 }
@@ -120,7 +131,7 @@ body {
     flex-direction: column;
     flex: 75%;
     justify-content: flex-start;
-    padding: 10px 15px
+    padding: 1%;
 }
 
 
@@ -129,18 +140,20 @@ body {
 /* ################################## Work ############################################*/
 
 .Work {
-    background-color: rgb(218, 150, 102);
+    background-color: var(--bodyBG);
+    color: var(--bodytext);
     display: flex;
     flex-direction: row;
-    height: auto;
+    height: 500px;
     flex-wrap: wrap;
+    margin-bottom: 25px;
 }
 
 .WorkSidebar {
     display: flex;
     justify-content: flex-end;
     flex: 25%;
-    border-right: 4px solid black; 
+    border-right: 3px solid var(--bodytext); 
     font-size: 32px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     padding: 5px 10px;
@@ -149,19 +162,51 @@ body {
 .WorkMain {
     display: flex;
     flex-direction: row;
-    height: 500px;
+    
     flex: 75%;
     flex-wrap: wrap;
 }
 
 .work {
-    border: 1px solid black;
-    width: 50%;
+    display: flex;
+    background-color: gray;
+    
+    border: 3px solid var(--headerBGteal);
+    height: 21%;
+    width: 48%;
+    margin: 1%;
 }
 
 .work:first-child {
-    width: 100%
+    width: 100%;
+    height: 50%;
+    margin-bottom: 1%;
+    margin-left: 1%;
+    background-image: url("./images/DG.jpg");
+    background-size: cover;
 }
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.work h4 {
+    background-color: var(--headerBGteal);
+    margin-top: auto;
+    margin-bottom: 30px;
+    font-size: 12px;
+    
+}
+
+.work h4 section {
+    font-size: 18px;
+    padding-bottom: 5px;
+    border: 1px solid var(--headerBGteal);
+}
+
+
+
 
 
 
@@ -169,8 +214,10 @@ body {
 
 .ContactMe {
     display: flex;
-    background-color: burlywood;
+    background-color: var(--bodyBG);
+    color: var(--bodytext);
     height: auto;
+    margin-bottom: 10px;
 }
 
 
@@ -179,7 +226,7 @@ body {
     display: flex;
     justify-content: flex-end;
     flex: 25%;
-    border-right: 4px solid black; 
+    border-right: 3px solid var(--bodytext); 
     font-size: 32px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     padding: 5px 10px;
@@ -213,8 +260,8 @@ body {
 .ContactMain div h4 {
     justify-content: space-evenly;
     height: 50%;
-    padding-bottom: 10px;
-    border-bottom: 4px solid black;
+    padding-bottom: 6px;
+    border-bottom: 3px solid var(--bodytext);
 }
 
 
@@ -308,8 +355,8 @@ body {
   /* ################################## Work ########################################  */
   
   .Work {
-      flex-direction: column;
-      height: 500px;
+      flex-direction: row;
+      /* height: 500px; */
   }
 
   .WorkSidebar {
@@ -414,13 +461,26 @@ body {
 
    /* ################################## Work ################################### */
    
-   .WorkMain {
-       flex-wrap: wrap;
-   }
+    .Work {
+        flex-direction: row;
+    }
+    .WorkMain {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
 
-   .work {
-       width: 100%;
-   }
+    .work:first-child {
+        height: 15%;
+    }
+
+    .work {
+    width: 100%;
+    height: 15%;
+}
+
+    
+
 
    /* ################################### Contact ######################### */
  
