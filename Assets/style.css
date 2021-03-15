@@ -163,7 +163,7 @@ body {
     float: left;
     max-width: 200px;
     max-height: 200px;
-    
+    border: 4px solid var(--headerBGteal);
     margin-right: 10px;
     margin-left: 10px;
     margin-bottom: auto;
@@ -181,7 +181,7 @@ body {
     color: var(--bodytext);
     display: flex;
     flex-direction: row;
-    height: 500px;
+    height: 1000px;
     flex-wrap: wrap;
     margin-bottom: 25px;
 }
@@ -228,6 +228,20 @@ body {
     background-size: cover;
 }
 
+#work1 {
+    background-image: url("./images/Beach.jpg");
+}
+#work2 {
+    background-image: url("./images/Eclipse.jpg");
+}
+#work3 {
+    background-image: url("./images/Road.jpg" );
+}
+#work4 {
+    background-image: url("./images/Shapes.jpg" );
+}
+
+
 img {
     max-width: 100%;
     max-height: 100%;
@@ -246,6 +260,8 @@ img {
     padding-bottom: 5px;
     border: 1px solid var(--headerBGteal);
 }
+
+
 
 
 
@@ -305,6 +321,12 @@ img {
     padding-bottom: 6px;
     border-bottom: 3px solid var(--bodytext);
 }
+
+.ContactMain a {
+    color: var(--bodytext);
+    text-decoration: none;
+}
+
 
 
 
@@ -396,12 +418,13 @@ img {
   
   .Work {
       flex-direction: row;
-      /* height: 500px; */
+      height: auto;
   }
 
   .WorkSidebar {
     justify-content:flex-start;
     border-right: none;
+    height: auto;
     border-bottom: 4px solid black;
     margin-left: 40px;
     margin-right: 40px;
@@ -413,7 +436,10 @@ img {
     margin-top: auto;
     margin-left: -10px;
     padding-bottom: 5px;
-    
+  }
+
+  .WorkMain {
+      height: 400px;
   }
 
 
@@ -451,7 +477,6 @@ img {
     }
 
     .ContactMain div {
-        /* justify-content: center; */
         display: flex;
         flex-wrap: nowrap;
         min-width: 50px;
@@ -507,6 +532,7 @@ img {
     .WorkMain {
     display: flex;
     flex-wrap: wrap;
+    margin-top: 25px;
     flex-direction: column;
 }
 
