@@ -21,6 +21,7 @@ body {
 .navbar {
     display: flex;
     height: 15vh;
+    
 }
 
 .name {
@@ -67,11 +68,22 @@ body {
     
 }
 
-.navlist li a {
+.navlist li a:link {
     text-decoration: none;
     padding-bottom: 3px;
+    color: var(--headerBGteal);
     border-bottom: 3px solid var(--headerBGteal);
 }
+
+
+
+.navlist li a:visited {
+    color: var(--headerBGteal)
+}
+
+
+
+
 
 /* ################################## Background Pic with Subtitle #################### */
 
@@ -103,14 +115,18 @@ body {
     display: flex;
     color: var(--bodytext);
     background-color: var(--bodyBG);
-    height: 25vh;
+    /* height: 25vh; */
+    height: auto;
     margin-bottom: 25px;
 }
+
+
 
 .AMSidebar {
     display: flex;
     justify-content: flex-end;
     flex: 25%;
+    height: auto;
     border-right: 3px solid var(--bodytext); 
     font-size: 32px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -128,10 +144,31 @@ body {
 
 .AboutMeText {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex: 75%;
     justify-content: flex-start;
-    padding: 1%;
+    margin-bottom: 10px;
+}
+
+.AboutMeText p {
+    height: 100%;
+    display: flex;
+    text-align: justify;
+    justify-content: flex-start;
+    margin-bottom: auto;
+    
+}
+
+.IDImage {
+    float: left;
+    max-width: 200px;
+    max-height: 200px;
+    
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: auto;
+    
+    
 }
 
 
@@ -162,9 +199,9 @@ body {
 .WorkMain {
     display: flex;
     flex-direction: row;
-    
     flex: 75%;
     flex-wrap: wrap;
+    padding-bottom: 20px;
 }
 
 .work {
@@ -315,12 +352,10 @@ img {
         margin: auto;
         flex-wrap: nowrap;
         text-align: center;
-        border: 1px solid black;
     }
 
     li {
         margin: auto;
-        border: 1px solid black;
     }
 
 
@@ -332,7 +367,7 @@ img {
 
   .AboutMe {
       flex-direction: column;
-      height: 250px;
+      height: auto;
   }
 
   .AMSidebar {
