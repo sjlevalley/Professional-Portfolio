@@ -337,6 +337,11 @@ img {
 .ContactMain a {
     color: var(--bodytext);
     text-decoration: none;
+    font-size: 24px;
+}
+
+.phone {
+    font-size: 18px;
 }
 
 
@@ -390,6 +395,7 @@ img {
 
     li {
         margin: auto;
+        
     }
 
 
