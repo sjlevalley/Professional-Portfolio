@@ -182,7 +182,7 @@ body {
     color: var(--bodytext);
     display: flex;
     flex-direction: row;
-    height: 1000px;
+    height: 500px;
     flex-wrap: wrap;
     margin-bottom: 25px;
 }
@@ -249,13 +249,7 @@ img {
     max-height: 100%;
 }
 
-.work h4 {
-    background-color: var(--headerBGteal);
-    margin-top: auto;
-    margin-bottom: 30px;
-    font-size: 12px;
-    display: flex;
-}
+
 
 .work div {
     background-color: var(--headerBGteal);
@@ -266,7 +260,7 @@ img {
     font-weight: 900;
     margin-top: auto;
     max-width: 100px;
-    margin-bottom: 10%;
+    margin-bottom: 15px;
     font-size: 16px;
     display: flex;
 }
@@ -372,9 +366,12 @@ img {
         /* background-color: red; */
     }
 
-    h1 {
+    .name h1 {
         flex: 100%;
-        color: rgb(50, 31, 83);
+        color: var(--headergray);
+        padding: 20px 12px 20px 20px;
+
+        
     }
 
     .links {
@@ -516,6 +513,7 @@ img {
     
     .name h1 {
         flex: 100%;
+        padding: 20px 12px 20px 20px;
     }
 
     .links {
@@ -553,15 +551,16 @@ img {
     height: 750px;
     margin-top: 25px;
     flex-direction: column;
+    height: 600px;
 }
 
     .work:first-child {
-        height: 15%;
+        height: 18%;
     }
 
     .work {
     width: 100%;
-    height: 15%;
+    height: 18%;
 }
     .work div {
         margin-right: auto;
@@ -575,7 +574,7 @@ img {
  
    .ContactMe {
        height: auto;
-       padding-top: 50px;
+       /* padding-top: 10px; */
    }
 
    .CMSidebar {
