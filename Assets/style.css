@@ -214,7 +214,8 @@ body {
     height: 21%;
     width: 48%;
     margin: 1%;
-    color: var(--bodytext);
+    color: black;
+    /* color: var(--bodytext); */
 }
 
 .work:hover {
@@ -227,25 +228,25 @@ body {
     height: 50%;
     margin-bottom: 1%;
     margin-left: 1%;
-    background-image: url("./images/WeatherDash.png");
+    background: linear-gradient( rgb(255 255 255 / 45%), rgb(118 118 118 / 45%) ), url(./images/WeatherDash.png);
     background-size: cover;
     border-radius: 5px;
 }
 
 #work1 {
-    background-image: url("./images/WorkDayScheduler.png");
+    background: linear-gradient( rgb(255 255 255 / 45%), rgb(118 118 118 / 45%) ), url(./images/WorkDayScheduler.png);
     border-radius: 5px;
 }
 #work2 {
-    background-image: url("./images/CodeQuiz.png");
+    background: linear-gradient( rgb(255 255 255 / 45%), rgb(118 118 118 / 45%) ), url(./images/CodeQuiz.png);
     border-radius: 5px;
 }
 #work3 {
-    background-image: url("./images/PW\ Generator.png" );
+    background: linear-gradient( rgb(255 255 255 / 45%), rgb(118 118 118 / 45%) ), url(./images/PW\ Generator.png);
     border-radius: 5px;
 }
 #work4 {
-    background-image: url("./images/HoriSEOn.png" );
+    background: linear-gradient( rgb(255 255 255 / 45%), rgb(118 118 118 / 45%) ), url(./images/HoriSEOn.png);
     border-radius: 5px;
 }
 
