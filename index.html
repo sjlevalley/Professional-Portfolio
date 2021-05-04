@@ -1,168 +1,240 @@
-
 <!DOCTYPE html>
 <html lang="en-us">
+  <!-- Head with Title and Meta Data -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link />
+    <link rel="stylesheet" href="./assets/reset.css" />
+    <link rel="stylesheet" href="./assets/style.css" />
+    <title>Steve LeValley!</title>
+  </head>
 
-<!-- Head with Title and Meta Data -->
-    <head>
+  <body class="container-fluid">
+    <!-- ################################## Nav Bar ######################################### -->
 
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="stylesheet" href="./Assets/reset.css">
-        <link rel="stylesheet" href="./Assets/style.css">
-        <title>Steve LeValley!</title>
-
-    </head>
-
-    <body>
-
-<!-- ################################## Nav Bar ######################################### -->   
-        
-        <nav class="navbar">
-            <div class="name">
-                <h1>Steve LeValley</h1>
-            </div>
-
-            <div class="links">
-                <ul class="navlist">
-                    <li><a href="#AboutMe">About Me</a></li>
-                    <li><a href="#Work">Work</a></li>
-                    <li><a href="#ContactMe">Contact Me</a></li>
-                    <li><a href="https://sjlevalley.github.io/Resume/" target="_blank">Resume</a></li>
-                </ul>
-            </div>
-        </nav>
-
-<!-- ################################## Background Pic with Subtitle #################### -->
-
-        <div class="subtitle">
-            <h2>Welcome To My Page!</h2>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid navBarContainer">
+          <a class="navbar-brand" href="#">Steve LeValley</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="#AboutMe">About Me</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Work">View My Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#ContactMe">Contact Me</a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="https://sjlevalley.github.io/Resume/"
+                  target="_blank"
+                  >Resume</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
+      </nav>
 
-        
+      <!-- ################################## Background Pic with Subtitle #################### -->
+      <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <h1 class="display-4">Fluid jumbotron</h1>
+          <p class="lead">
+            This is a modified jumbotron that occupies the entire horizontal
+            space of its parent.
+          </p>
+        </div>
+      </div>
+    </header>
 
-<!-- ################################## About Me ######################################## -->
+    <main class="container-fluid">
+      <!-- ################################## About Me ######################################## -->
+      <div class="container-fluid AboutMe" id="AboutMe">
+        <div class="row row1 border border-dark m-4">
+          <div class="col-lg-2 border border-dark">About Me</div>
+          <div class="col-sm border border-dark">
+            <h2>
+              <img
+                src="./Assets/images/MeImage.jpg"
+                alt="A guy holding a fish"
+                class="IDImage"
+              />
+            </h2>
+          </div>
+          <div class="col-sm border border-dark">
+            Hello! My name is Steve LeValley. I am currently working on getting
+            my Web Development certification from the University of California,
+            San Diego (UCSD). I previously received a B.S. Degree in Marine
+            Engineering Technology from the California Maritime Academy and I
+            currently live in San Diego.
+          </div>
+        </div>
+      </div>
 
-        <header class="AboutMe" id="AboutMe">
+      <!-- ################################## Work ############################################ -->
 
-            <section class="AMSidebar">
-                <h3>About Me</h3>
-            </section>
-                
-            <section class="AboutMeText">
-
-
-                
-                <br>
-                <h2><img src="./Assets/images/MeImage.jpg" alt="A guy holding a fish" class="IDImage"></h2>Hello! My name is Steve
-                LeValley. I am currently working on getting my Web Development certification from 
-                the University of California, San Diego (UCSD). I previously received a B.S. Degree
-                in Marine Engineering Technology from the California Maritime Academy and I currently 
-                live in San Diego.
-                
-             
-               
-
-            
-            </section>
-    
-        </header>
-
-       
-
-<!-- ################################## Work ############################################ -->
-
-        <header class="Work" id="Work">
-
-            <div class="WorkSidebar">
-                <h3>Work</h3>
+      <div class="container-fluid Work" id="Work">
+        <div class="row row2 border border-dark m-4">
+          <div class="col-lg-2 border border-dark">View My Projects</div>
+          <div class="col-sm border border-dark">
+            <!-- ################################## -->
+            <div class="card">
+              <img
+                class="card-img-top"
+                src="./assets/images/WeatherDash.png"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Weather Dashboard</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a
+                  href="https://sjlevalley.github.io/WeatherDashboard/"
+                  target="_blank"
+                  class="btn btn-primary"
+                  >View This Project</a
+                >
+              </div>
             </div>
 
-            <div class="WorkMain">
-                    
-                    <a href="https://sjlevalley.github.io/WeatherDashboard/" target="_blank" class="work">
-                            <div class="workMain1">Weather Dashboard</div>
-                    </a>
-                    
-                    <a href="https://sjlevalley.github.io/WorkDayScheduler/" target="_blank" class="work" id="work1">
-                        
-                            <div>Work Day Scheduler</div>
-                        
-                    </a>
-                    <a href="https://sjlevalley.github.io/CodeQuiz/" target="_blank" class="work" id="work2">
-                        
-                            <div>Code Quiz</div>
-                        
-                    </a>
-                    <a href="https://sjlevalley.github.io/PasswordGenerator/" target="_blank" class="work" id="work3">
-                        
-                            <div>Password Generator</div>
-                            
-                        
-                    </a>
-                    <a href="https://sjlevalley.github.io/HoriSEOn---Code-Refactor/" target="_blank" class="work" id="work4" >
-                            
-                        <div>Code Refactor</div>
-                    </a>
-                
-                    <div class="GitHub1">
-
-                        <button class="GitHub2">
-                            <h4>
-                                <a href="https://github.com/sjlevalley/WeatherDashboard" target="_blank">GitHub - Weather Dashboard</a>
-                            </h4>
-                        </button>
-                        <button class="GitHub2">
-                            <h4>
-                                <a href="https://github.com/sjlevalley/WorkDayScheduler" target="_blank">GitHub - Scheduler</a>
-                            </h4>
-                        </button>
-                        <button class="GitHub2">
-                            <h4>
-                                <a href="https://www.github.com/sjlevalley/CodeQuiz" target="_blank">GitHub - Code Quiz</a>
-                            </h4>
-                        </button>
-
-                    </div>
-            </div>
-            
-        </header>
-
-<!-- ################################## Contact Me ####################################### -->
-        
-        <footer class="ContactMe" id="ContactMe">
-
-
-            <div class="CMSidebar">
-                <h3>Contact Me</h3>
+            <div class="card">
+              <img
+                class="card-img-top"
+                src="./assets/images/WorkDayScheduler.png"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Work Day Scheduler</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a
+                  href="https://sjlevalley.github.io/WorkDayScheduler/"
+                  target="_blank"
+                  class="btn btn-primary"
+                  >View This Project</a
+                >
+              </div>
             </div>
 
-            <div class="ContactMain">
-                <div class="phone">
-                    <h4>
-                        (555) 555-5555
-                    </h4>
-                </div>
-                <div class="email">
-                    <h4>
-                        <a href="mailto:slevalley@gmail.com" target="_blank">Email Me</a>
-                    </h4>
-                </div>
-                <div class="GitHub">
-                    <h4>
-                        <a href="https://github.com/sjlevalley" target="_blank">GitHub</a>
-                    </h4>
-                </div>
-                <div class="Twitter">
-                    <h4>
-                        <a href="https://www.linkedin.com/in/steve-levalley-36550763/" target="_blank">LinkedIn</a>
-                    </h4>
-                </div>
-               
+            <div class="card">
+              <img
+                class="card-img-top"
+                src="./assets/images/CodeQuiz.png"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Code Quiz</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a
+                  href="https://sjlevalley.github.io/CodeQuiz/"
+                  target="_blank"
+                  class="btn btn-primary"
+                  >View This Project</a
+                >
+              </div>
             </div>
-        </footer>
-    
 
-        
-    </body>
+            <div class="card">
+              <img
+                class="card-img-top"
+                src="./assets/images/PW Generator.png"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Password Generator</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a
+                  href="https://sjlevalley.github.io/PasswordGenerator/"
+                  target="_blank"
+                  class="btn btn-primary"
+                  >View This Project</a
+                >
+              </div>
+            </div>
 
+            <div class="card">
+              <img
+                class="card-img-top"
+                src="./assets/images/HoriSEOn.png"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <h5 class="card-title">HoriSEOn</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a
+                  href="https://sjlevalley.github.io/HoriSEOn---Code-Refactor/"
+                  target="_blank"
+                  class="btn btn-primary"
+                  >View This Project</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- ################################## Contact Me ####################################### -->
+    <!-- ################################## Contact Me ####################################### -->
+    <!-- ################################## Contact Me ####################################### -->
+
+    <footer class="container-fluid ContactMe" id="ContactMe">
+      <div class="container-fluid">
+        <div class="row row3 border border-dark m-4">
+          <div class="col-lg-2 border border-dark">Contact Me</div>
+
+          <div class="col-sm border border-dark">
+            <a href="mailto:slevalley@gmail.com" target="_blank">Email Me</a>
+          </div>
+          <div class="col-sm border border-dark">
+            <a href="https://github.com/sjlevalley" target="_blank">GitHub</a>
+          </div>
+          <div class="col-sm border border-dark">
+            <a
+              href="https://www.linkedin.com/in/steve-levalley-36550763/"
+              target="_blank"
+              >LinkedIn</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
