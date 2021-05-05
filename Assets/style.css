@@ -233,17 +233,17 @@ html {
   height: 50%;
   margin-bottom: 1%;
   margin-left: 1%;
-  background: linear-gradient( rgb(255 255 255 / 45%), rgb(118 118 118 / 45%) ), url(./images/WeatherDash.png);
+  background: linear-gradient( rgb(255 255 255 / 45%), rgb(118 118 118 / 45%) ), url(./images/note-taker.png);
   background-size: cover;
   border-radius: 5px;
 }
 
 #work1 {
-  background: linear-gradient( rgb(255 255 255 / 45%), rgb(118 118 118 / 45%) ), url(./images/WorkDayScheduler.png);
+  background: linear-gradient( rgb(255 255 255 / 45%), rgb(118 118 118 / 45%) ), url(./images/WeatherDash.png);
   border-radius: 5px;
 }
 #work2 {
-  background: linear-gradient( rgb(255 255 255 / 45%), rgb(118 118 118 / 45%) ), url(./images/CodeQuiz.png);
+  background: linear-gradient( rgb(255 255 255 / 45%), rgb(118 118 118 / 45%) ), url(./images/WorkDayScheduler.png);
   border-radius: 5px;
 }
 #work3 {
@@ -358,6 +358,8 @@ img {
 .phone {
   font-size: 18px;
 }
+
+
 
 .GitHub1 {
   display: flex;
